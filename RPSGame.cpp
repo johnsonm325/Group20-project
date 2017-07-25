@@ -157,5 +157,20 @@ void RPSGame::compChoice()
 
 void RPSGame::determineWinner()
 {
-
+	if (tool1.fight(player) > tool1.fight(computer))
+	{
+		human_wins++;
+		cout << "You win!" << endl;
+	}
+	
+	else if (tool1.fight(player) < tool1.fight(computer))
+	{
+		computer_wins++;
+		cout << "Computer wins!" << endl;
+	}
+	
+	else if (tool1.fight(player) == tool1.fight(computer))
+	{
+		cout << "It's a draw" << endl;
+	}
 }
