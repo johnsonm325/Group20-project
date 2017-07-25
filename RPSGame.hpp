@@ -10,6 +10,7 @@ using std::endl;
 class RPSGame
 {
 private:
+	Tool tool1;
 	int human_wins,
 		computer_wins,
 		ties,
